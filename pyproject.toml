@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "bear-market-analysis"
+version = "0.1.0"
+description = ""
+authors = ["benisbuzz <ben@danziger.uk>"]
+readme = "README.md"
+packages = [{include = "bear_market_analysis"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pandas = "^2.1.1"
+fredpy = "^3.2.8"
+numpy = "^1.26.0"
+matplotlib = "^3.8.0"
+ipython = "^8.15.0"
+python-dotenv = "^1.0.0"
+scipy = "^1.11.3"
+yfinance = "^0.2.30"
+ta-lib = "^0.4.28"
+statsmodels = "^0.14.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
